@@ -1,0 +1,259 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #000;
+  --text: #fff;
+  --muted: #6b7280;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   MOBILE HEADER
+=========================== */
+.mobile-header {
+  display: none;
+  padding: 16px 28px 12px;
+  margin-bottom: 24px;
+}
+
+.mobile-nav {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.mobile-social {
+  font-size: 14px;
+  color: var(--muted);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.mobile-social a {
+  color: var(--muted);
+}
+
+.mobile-social a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* ===========================
+   RIGHT SIDEBAR
+=========================== */
+.sidebar {
+  position: fixed;
+  top: 8px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  z-index: 100;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.sidebar-nav a {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.sidebar-social a {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.sidebar-social a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+.main {
+  max-width: 640px;
+  padding: 40px 28px 100px;
+  margin: 0;
+  margin-left: 7.5%;
+}
+
+/* ===========================
+   NAME
+=========================== */
+.name {
+  font-family: var(--font-serif);
+  font-weight: bold;
+  font-style: italic;
+  font-size: clamp(72px, 11vw, 120px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  color: var(--text);
+}
+
+/* ===========================
+   BIO
+=========================== */
+.bio {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  max-width: 520px;
+  margin-bottom: 72px;
+}
+
+/* ===========================
+   ENTRIES (projects, articles)
+=========================== */
+.entry {
+  margin-bottom: 56px;
+}
+
+.entry-date {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.entry-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.entry-title a:hover {
+  text-decoration: underline;
+}
+
+.entry-desc {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+/* ===========================
+   ENTRY IMAGES
+=========================== */
+.entry-images {
+  margin-top: 16px;
+}
+
+.entry-images.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.img-placeholder {
+  background: #111;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/10;
+  width: 100%;
+}
+
+.img-placeholder.full {
+  aspect-ratio: 16/9;
+}
+
+.img-placeholder.photo-ph {
+  aspect-ratio: 1;
+}
+
+.img-placeholder span {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.img-placeholder img,
+.entry-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 0 28px 80px;
+  }
+
+  .name {
+    font-size: clamp(64px, 18vw, 96px);
+    margin-bottom: 24px;
+  }
+
+  .entry-images.two-col {
+    grid-template-columns: 1fr;
+  }
+}
