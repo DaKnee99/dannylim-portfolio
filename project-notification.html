@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notification Repository — Danny Lim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- MOBILE TOP NAV -->
+  <header class="mobile-header">
+    <nav class="mobile-nav">
+      <a href="index.html#work">Work</a>
+    </nav>
+    <div class="mobile-social">
+      <a href="mailto:hello@dannylim.com">Email</a>
+      /
+      <a href="https://www.linkedin.com/in/danny-lim-559282153/">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- FIXED RIGHT SIDEBAR (desktop) -->
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <a href="index.html#work">Work</a>
+    </nav>
+    <div class="sidebar-social">
+      <a href="mailto:hello@dannylim.com">Email</a>
+      <a href="https://www.linkedin.com/in/danny-lim-559282153/">LinkedIn</a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <a href="index.html" class="back-link">← Back</a>
+
+    <!-- HERO IMAGE -->
+    <div class="entry-images" style="margin-bottom: 48px;">
+      <img src="portfolio images/Grof_notification_repository.png" alt="Notification Repository" />
+    </div>
+
+    <!-- PROJECT HEADER -->
+    <h1 class="project-title">CREATING A NOTIFICATION SOURCE OF TRUTH</h1>
+    <p class="entry-desc">
+      Built a company-wide notification repository that eliminated copy inconsistencies and streamlined collaboration
+      across design, engineering, and marketing teams.
+    </p>
+
+    <!-- IMPACT -->
+    <section class="project-section">
+      <h2 class="section-label">Impact</h2>
+      <ul class="impact-list">
+        <li>Audited 60 notifications across the product</li>
+        <li>Created self-service system adopted by entire product team</li>
+        <li>Eliminated cross-team confusion and reduced implementation back-and-forth</li>
+      </ul>
+
+      <blockquote class="project-quote">
+        "The repository makes it so much clearer to understand what notifications we have. Before this, I'd have to dig
+        through code or ask around."
+        <cite>— Product Manager</cite>
+      </blockquote>
+
+      <p class="project-meta">
+        UX Writer &nbsp;|&nbsp; 4 weeks &nbsp;|&nbsp; Product, Design, Engineering, Marketing
+      </p>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="project-section">
+      <h2 class="section-label">The Problem</h2>
+      <p class="entry-desc">
+        Grof's app notifications were inconsistent—the same actions described differently across the product. Without a
+        centralized system, designers, engineers, and marketers worked from different terminology, creating user
+        confusion and slowing down shipping.
+      </p>
+    </section>
+
+    <!-- THE SOLUTION -->
+    <section class="project-section">
+      <h2 class="section-label">The Solution</h2>
+      <p class="entry-desc">
+        A centralized notification repository with standardized templates, placeholder formats, and color-coded
+        categorization. The system serves as a single source of truth, enabling self-service implementation without
+        approval bottlenecks.
+      </p>
+    </section>
+
+    <!-- LARGE IMAGE -->
+    <div class="entry-images" style="margin-bottom: 56px;">
+      <div class="img-placeholder full"><span>Repository Table — Color-Coded Tags & Placeholder Format</span></div>
+    </div>
+
+    <!-- THE PROCESS -->
+    <section class="project-section">
+      <h2 class="section-label">The Process</h2>
+
+      <div class="project-feature">
+        <p class="feature-title">1. Audit Phase</p>
+        <p class="entry-desc">Reviewed 60 notifications against four criteria:</p>
+        <ul class="feature-list">
+          <li>Usage status (active vs. obsolete)</li>
+          <li>Redundancy (duplicate messaging)</li>
+          <li>Clarity of intent (FYI vs. action required)</li>
+          <li>Tone alignment (brand voice consistency)</li>
+        </ul>
+      </div>
+
+      <div class="project-feature">
+        <p class="feature-title">2. Repository Design</p>
+        <p class="entry-desc">Each notification entry includes:</p>
+        <ul class="feature-list">
+          <li>Purpose categorization</li>
+          <li>Recipient type</li>
+          <li>Feature association</li>
+          <li>Template with clear placeholders (e.g., <code>{user_name}</code>, <code>{transaction_amount}</code>)</li>
+          <li>Color-coded tags for quick scanning</li>
+        </ul>
+      </div>
+
+      <div class="entry-images" style="margin-bottom: 40px;">
+        <div class="img-placeholder full"><span>Example Entry — Placeholder Format</span></div>
+      </div>
+
+      <div class="project-feature">
+        <p class="feature-title">3. Team Workflow</p>
+        <p class="workflow-steps">UX + Marketing draft copy → Add to repository → Engineering implements from templates</p>
+        <p class="entry-desc" style="margin-top: 12px;">
+          Result: No approval bottlenecks, self-service system.
+        </p>
+      </div>
+    </section>
+
+    <!-- KEY DESIGN DECISIONS -->
+    <section class="project-section">
+      <h2 class="section-label">Key Design Decisions</h2>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Why Placeholders?</p>
+        <p class="entry-desc">
+          Engineers know exactly which content is dynamic vs. static—no guessing, no waiting for clarification.
+        </p>
+      </div>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Why Color-Coding?</p>
+        <p class="entry-desc">
+          Visual system enables quick scanning across 60+ notifications to find relevant examples.
+        </p>
+      </div>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Why Self-Service?</p>
+        <p class="entry-desc">
+          Reduces bottlenecks while giving marketing tone consistency and engineering a clear implementation path.
+        </p>
+      </div>
+
+      <div class="entry-images">
+        <div class="img-placeholder full"><span>Color-Coding System Legend & Workflow Diagram</span></div>
+      </div>
+    </section>
+
+    <!-- WHAT I LEARNED -->
+    <section class="project-section">
+      <h2 class="section-label">What I Learned</h2>
+      <p class="entry-desc">
+        Minor word choices have major impact on user trust. The difference between "Payment processed" and "Payment
+        successful"—passive vs. active voice—shapes whether users feel informed or confused.
+      </p>
+      <p class="entry-desc">
+        Design systems extend beyond UI components. Content systems are equally critical. A button style guide is
+        useless if button labels are inconsistent.
+      </p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
