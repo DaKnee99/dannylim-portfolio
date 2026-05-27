@@ -44,99 +44,155 @@
     <a href="index.html" class="back-link">← Back</a>
 
     <!-- HERO IMAGE -->
-    <div class="entry-images" style="margin-bottom: 48px;">
-      <img src="portfolio images/Grof_notification_repository.png" alt="Notification Repository" />
+    <div class="img-wrap-orange" style="margin-bottom: 48px;">
+      <img src="portfolio images/Grof notification project/Grof_notification_repository.png" alt="Notification Repository" />
     </div>
 
     <!-- PROJECT HEADER -->
     <h1 class="project-title">CREATING A NOTIFICATION SOURCE OF TRUTH</h1>
     <p class="entry-desc">
-      Built a company-wide notification repository that eliminated copy inconsistencies and streamlined collaboration
-      across design, engineering, and marketing teams.
+      I noticed Grof's app notifications were using inconsistent language across the product, and no one had a clear
+      view of what existed. I started an audit and built a centralised repository that gave the whole team a shared
+      language for the first time.
     </p>
 
-    <!-- IMPACT -->
+    <!-- STAT BLOCK -->
+    <div class="project-stats">
+      <div class="project-stat">
+        <span class="stat-number">60</span>
+        <span class="stat-label">notifications audited across the product</span>
+      </div>
+      <div class="project-stat">
+        <span class="stat-number">4</span>
+        <span class="stat-label">teams served: product, design, engineering, marketing</span>
+      </div>
+      <div class="project-stat">
+        <span class="stat-number">4 wks</span>
+        <span class="stat-label">from first audit to self-service system</span>
+      </div>
+    </div>
+
+    <!-- META -->
+    <p class="project-meta">
+      UX Writing &nbsp;|&nbsp; 4 weeks &nbsp;|&nbsp; Product, Design, Engineering, Marketing
+    </p>
+
+    <!-- HOW MIGHT WE -->
+    <div class="project-hmw">
+      "How might we give every team a shared language for notifications, without adding a new approval bottleneck?"
+    </div>
+
+    <!-- CONTEXT -->
     <section class="project-section">
-      <h2 class="section-label">Impact</h2>
-      <ul class="impact-list">
-        <li>Audited 60 notifications across the product</li>
-        <li>Created self-service system adopted by entire product team</li>
-        <li>Eliminated cross-team confusion and reduced implementation back-and-forth</li>
-      </ul>
-
-      <blockquote class="project-quote">
-        "The repository makes it so much clearer to understand what notifications we have. Before this, I'd have to dig
-        through code or ask around."
-        <cite>— Product Manager</cite>
-      </blockquote>
-
-      <p class="project-meta">
-        UX Writer &nbsp;|&nbsp; 4 weeks &nbsp;|&nbsp; Product, Design, Engineering, Marketing
+      <h2 class="section-label">Context</h2>
+      <p class="entry-desc">
+        While reviewing Grof's product, I noticed that the same user actions were being described differently depending
+        on where you looked. A payment confirmation read one way in-app, another way in an email, and something else
+        again in a push notification. There was no central record of what notifications existed, what they said, or who
+        owned them.
       </p>
+      <p class="entry-desc">
+        This wasn't a problem anyone had formally raised. But the inconsistency was creating quiet friction: designers
+        were duplicating work, engineers were implementing copy from memory or asking around, and marketing had no
+        reliable reference when writing campaign messaging. I raised it with my PM and proposed building a repository.
+        She mentioned she'd already been thinking they needed exactly this.
+      </p>
+    </section>
+
+    <!-- DISCOVERY -->
+    <section class="project-section">
+      <h2 class="section-label">Discovery</h2>
+      <p class="entry-desc">
+        I started by pulling every notification in the product and reviewing them against four criteria: whether they
+        were still active, whether any were duplicating each other, whether the intent was clear (informational vs.
+        action required), and whether the tone matched Grof's brand voice.
+      </p>
+      <p class="entry-desc">
+        Across 60 notifications, several patterns emerged.
+      </p>
+
+      <div class="research-insights">
+        <div class="insight-item">
+          <p class="insight-label">Finding 01</p>
+          <p class="entry-desc">The same action was described in multiple ways with no clear rationale for the
+            difference</p>
+        </div>
+        <div class="insight-item">
+          <p class="insight-label">Finding 02</p>
+          <p class="entry-desc">Several notifications were obsolete but still active, causing confusion for users and
+            the team</p>
+        </div>
+        <div class="insight-item">
+          <p class="insight-label">Finding 03</p>
+          <p class="entry-desc">No team member had a complete picture of what notifications existed across the product
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- THE PROBLEM -->
     <section class="project-section">
       <h2 class="section-label">The Problem</h2>
       <p class="entry-desc">
-        Grof's app notifications were inconsistent—the same actions described differently across the product. Without a
-        centralized system, designers, engineers, and marketers worked from different terminology, creating user
-        confusion and slowing down shipping.
+        Without a centralised system, each team was working from their own version of the truth. Designers referenced
+        old Figma files. Engineers implemented from memory or Slack threads. Marketing wrote copy without knowing what
+        the product already said. The result was a product that felt slightly off-voice in ways that were hard to
+        pinpoint but easy to feel.
       </p>
-    </section>
-
-    <!-- THE SOLUTION -->
-    <section class="project-section">
-      <h2 class="section-label">The Solution</h2>
       <p class="entry-desc">
-        A centralized notification repository with standardized templates, placeholder formats, and color-coded
-        categorization. The system serves as a single source of truth, enabling self-service implementation without
-        approval bottlenecks.
+        The fix wasn't just better copy. It was a system that made consistent copy the path of least resistance for
+        everyone who needed to ship notifications.
       </p>
     </section>
-
-    <!-- LARGE IMAGE -->
-    <div class="entry-images" style="margin-bottom: 56px;">
-      <div class="img-placeholder full"><span>Repository Table — Color-Coded Tags & Placeholder Format</span></div>
-    </div>
 
     <!-- THE PROCESS -->
     <section class="project-section">
       <h2 class="section-label">The Process</h2>
 
       <div class="project-feature">
-        <p class="feature-title">1. Audit Phase</p>
-        <p class="entry-desc">Reviewed 60 notifications against four criteria:</p>
+        <p class="feature-title">1. Audit</p>
+        <p class="entry-desc">Reviewed all 60 notifications against four criteria:</p>
         <ul class="feature-list">
-          <li>Usage status (active vs. obsolete)</li>
-          <li>Redundancy (duplicate messaging)</li>
-          <li>Clarity of intent (FYI vs. action required)</li>
-          <li>Tone alignment (brand voice consistency)</li>
+          <li>Usage status: active vs. obsolete</li>
+          <li>Redundancy: duplicate messaging across channels</li>
+          <li>Clarity of intent: informational vs. action required</li>
+          <li>Tone alignment: consistency with brand voice</li>
         </ul>
+      </div>
+
+      <div class="img-wrap-orange" style="margin-bottom: 40px;">
+        <div class="img-placeholder full"><span>Before / After — Single Notification Comparison</span></div>
       </div>
 
       <div class="project-feature">
         <p class="feature-title">2. Repository Design</p>
-        <p class="entry-desc">Each notification entry includes:</p>
+        <p class="entry-desc">
+          I built the repository in Notion so it was accessible to everyone without needing design tool access. Each
+          entry covers a single notification and is structured consistently across all 60 rows:
+        </p>
         <ul class="feature-list">
-          <li>Purpose categorization</li>
-          <li>Recipient type</li>
-          <li>Feature association</li>
-          <li>Template with clear placeholders (e.g., <code>{user_name}</code>, <code>{transaction_amount}</code>)</li>
-          <li>Color-coded tags for quick scanning</li>
+          <li>Notification name and description, so anyone can identify the entry at a glance (e.g. Bill Pay Submitted)</li>
+          <li>Copy template with explicit placeholders for dynamic content, e.g. <code>[currency code]</code>, <code>[dollar amount]</code>, <code>[recipient name]</code></li>
+          <li>Recipient type, using color-coded tags to distinguish who receives each notification</li>
+          <li>Feature association and notification channel (in-app, email, push), also color-coded for quick scanning</li>
+          <li>Implementation status per channel, tracked with checkboxes so the team always knows what's live</li>
         </ul>
       </div>
 
-      <div class="entry-images" style="margin-bottom: 40px;">
-        <div class="img-placeholder full"><span>Example Entry — Placeholder Format</span></div>
+      <!-- Save your full Notion table screenshot as: portfolio images/Grof_notification_table.png -->
+      <div class="img-wrap-orange" style="margin-bottom: 40px;">
+        <img src="portfolio images/Grof notification project/Grof_notification_table.png" alt="Notification repository — full table view in Notion" />
       </div>
 
       <div class="project-feature">
         <p class="feature-title">3. Team Workflow</p>
-        <p class="workflow-steps">UX + Marketing draft copy → Add to repository → Engineering implements from templates</p>
-        <p class="entry-desc" style="margin-top: 12px;">
-          Result: No approval bottlenecks, self-service system.
+        <p class="entry-desc">
+          The system was designed to remove the designer as a bottleneck. UX and marketing draft copy, add it to the
+          repository, and engineering implements directly from the templates. No approval loop required for standard
+          notifications.
         </p>
+        <p class="workflow-steps">UX + Marketing draft copy → Add to repository → Engineering implements from
+          templates</p>
       </div>
     </section>
 
@@ -145,42 +201,90 @@
       <h2 class="section-label">Key Design Decisions</h2>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">Why Placeholders?</p>
+        <p class="scenario-sub-title">Why explicit placeholders?</p>
         <p class="entry-desc">
-          Engineers know exactly which content is dynamic vs. static—no guessing, no waiting for clarification.
+          Engineers know exactly which parts of a notification are dynamic vs. static. No guessing, no waiting for
+          clarification. A template like "Hi {user_name}, your payment of {amount} was successful" removes all
+          ambiguity at implementation time.
         </p>
       </div>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">Why Color-Coding?</p>
+        <p class="scenario-sub-title">Why color-coding?</p>
         <p class="entry-desc">
-          Visual system enables quick scanning across 60+ notifications to find relevant examples.
+          With 60 notifications in one table, visual scanning matters. Color tags let anyone quickly filter by
+          category, recipient, or status without reading every row.
         </p>
       </div>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">Why Self-Service?</p>
+        <p class="scenario-sub-title">Why self-service?</p>
         <p class="entry-desc">
-          Reduces bottlenecks while giving marketing tone consistency and engineering a clear implementation path.
+          A system that requires a designer to approve every notification copy change isn't a system, it's a queue.
+          Making it self-service was the only way the repository would actually get used.
         </p>
       </div>
 
-      <div class="entry-images">
-        <div class="img-placeholder full"><span>Color-Coding System Legend & Workflow Diagram</span></div>
+      <!-- Save your focused notification entry screenshot as: portfolio images/Grof_notification_entry.png -->
+      <div class="img-wrap-orange" style="margin-bottom: 40px;">
+        <img src="portfolio images/Grof notification project/Grof_notification_entry.png" alt="Single notification entry — structured fields and copy template" />
       </div>
+
     </section>
 
-    <!-- WHAT I LEARNED -->
+    <!-- OUTCOME -->
     <section class="project-section">
-      <h2 class="section-label">What I Learned</h2>
+      <h2 class="section-label">Outcome</h2>
       <p class="entry-desc">
-        Minor word choices have major impact on user trust. The difference between "Payment processed" and "Payment
-        successful"—passive vs. active voice—shapes whether users feel informed or confused.
+        I left Grof before the repository had been in use long enough to measure adoption formally. What I did receive
+        was verbal confirmation from both my PM and the marketing team that the system addressed a real gap and gave
+        them a clearer, more reliable reference than anything they'd had before.
       </p>
+
+      <blockquote class="project-quote">
+        "The repository makes it so much clearer to understand what notifications we have. Before this, I'd have to dig
+        through code or ask around."
+        <cite>— Product Manager, Grof</cite>
+      </blockquote>
+
       <p class="entry-desc">
-        Design systems extend beyond UI components. Content systems are equally critical. A button style guide is
-        useless if button labels are inconsistent.
+        The PM's reaction confirmed the core problem was real: without this, the team's default was to dig through code
+        or ask a colleague. The repository gave them a single place to go, and the structure made it self-explanatory
+        enough that it didn't need a handover guide.
       </p>
+    </section>
+
+    <!-- REFLECTIONS -->
+    <section class="project-section">
+      <h2 class="section-label">Reflections</h2>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Spotting problems no one assigned to you</p>
+        <p class="entry-desc">
+          This project started because I noticed something and decided it was worth fixing. My PM confirmed she'd been
+          thinking the same thing, which meant the work landed well. But the more useful lesson is that design
+          problems don't always come with a brief. Sometimes the brief is the problem you notice first.
+        </p>
+      </div>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Design systems extend beyond UI components</p>
+        <p class="entry-desc">
+          A button style guide is useless if button labels are inconsistent. Content systems are as foundational as
+          visual ones, and they tend to get built later and less rigorously. Building the notification repository felt
+          like filling in a gap that should have existed from the start.
+        </p>
+      </div>
+
+      <div class="scenario-sub">
+        <p class="scenario-sub-title">Word choice shapes user trust</p>
+        <p class="entry-desc">
+          The difference between "Payment processed" and "Payment successful" is passive vs. active voice, but it
+          changes whether a user feels informed or uncertain. Standardising these choices at the system level means
+          getting them right once, not re-litigating them every sprint.
+        </p>
+      </div>
+
     </section>
 
   </main>

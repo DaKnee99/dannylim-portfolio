@@ -44,160 +44,224 @@
     <a href="index.html" class="back-link">← Back</a>
 
     <!-- HERO IMAGE -->
-    <div class="entry-images" style="margin-bottom: 48px;">
-      <img src="portfolio images/Spenmo_KYB.png" alt="Onboarding KYB/KYC" />
+    <div class="img-wrap-orange" style="margin-bottom: 48px;">
+      <img src="portfolio images/Spenmo KYB project/Spenmo_KYB.png" alt="KYB Onboarding design" />
     </div>
 
     <!-- PROJECT HEADER -->
     <h1 class="project-title">REDUCING THE PAINS OF KYB ONBOARDING</h1>
     <p class="entry-desc">
-      Designed a streamlined digital KYB/KYC onboarding experience for Philippine market expansion, transforming
-      manual email-based processes into an intuitive e-form.
+      Spenmo already had KYB/KYC e-forms for Singapore and Malaysia. As the product expanded into the Philippines, I
+      adapted the form for new compliance requirements and used the opportunity to smooth out the friction points in the
+      existing form-filling experience.
     </p>
 
-    <!-- SCOPE -->
-    <section class="project-section">
-      <h2 class="section-label">Scope</h2>
-      <ul class="scope-list">
-        <li>Replaced manual document collection with digital experience</li>
-        <li>Designed for Philippine KYB/KYC compliance requirements</li>
-        <li>Supported multi-session completion for up to 12 document uploads</li>
-        <li>Project paused before launch due to market expansion halt</li>
-      </ul>
+    <!-- STAT BLOCK -->
+    <div class="project-stats">
+      <div class="project-stat">
+        <span class="stat-number">12</span>
+        <span class="stat-label">document types mapped and structured</span>
+      </div>
+      <div class="project-stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">teams aligned: product, engineering and compliance</span>
+      </div>
+      <div class="project-stat">
+        <span class="stat-number">6 wks</span>
+        <span class="stat-label">from brief to high-fidelity prototype</span>
+      </div>
+    </div>
 
-      <p class="project-meta">
-        UI/UX Design &nbsp;|&nbsp; 6 weeks &nbsp;|&nbsp; Product, Engineering, Compliance
+    <!-- META -->
+    <p class="project-meta">
+      UI/UX Design &nbsp;|&nbsp; 6 weeks &nbsp;|&nbsp; Product, Engineering, Compliance
+      &nbsp;|&nbsp; <em>Project paused before launch due to market expansion halt</em>
+    </p>
+
+    <!-- HOW MIGHT WE -->
+    <div class="project-hmw">
+      "How might we make a compliance-heavy onboarding process feel guided and human, not like a government form?"
+    </div>
+
+    <!-- CONTEXT -->
+    <section class="project-section">
+      <h2 class="section-label">Context</h2>
+      <p class="entry-desc">
+        Spenmo already had digital KYB/KYC e-forms running for its Singapore and Malaysia markets. As the company
+        expanded into the Philippines, compliance requirements shifted — new document types, different verification
+        rules, and a different regulatory baseline to design around.
       </p>
+      <p class="entry-desc">
+        Rather than simply porting the existing form over, I used the opportunity to revisit the form-filling experience
+        itself. The SG and MY forms worked, but there were friction points worth addressing: document guidance that
+        overwhelmed rather than helped, no prefilling despite Spenmo already holding customer data, and limited
+        visibility for users returning to a partially completed submission.
+      </p>
+    </section>
+
+    <!-- DISCOVERY -->
+    <section class="project-section">
+      <h2 class="section-label">Discovery</h2>
+      <p class="entry-desc">
+        I started by reviewing the existing SG and MY e-forms end-to-end, mapping where users were most likely to slow
+        down or drop off. I also benchmarked how other products handled compliance document collection: DocuSign's
+        guided workflows, Stripe Identity's progressive document steps, and government e-form patterns used across
+        Southeast Asia.
+      </p>
+      <p class="entry-desc">
+        Three friction points in the existing experience stood out as worth solving for the PH form.
+      </p>
+
+      <div class="research-insights">
+        <div class="insight-item">
+          <p class="insight-label">Insight 01</p>
+          <p class="entry-desc">Document guidance dumps too many options at once, making it harder, not easier, to
+            choose</p>
+        </div>
+        <div class="insight-item">
+          <p class="insight-label">Insight 02</p>
+          <p class="entry-desc">Known customer data wasn't being used to reduce form effort, despite it being available
+          </p>
+        </div>
+        <div class="insight-item">
+          <p class="insight-label">Insight 03</p>
+          <p class="entry-desc">Returning users had no quick way to see what was submitted vs. still pending across 12
+            document fields</p>
+        </div>
+      </div>
     </section>
 
     <!-- THE PROBLEM -->
     <section class="project-section">
       <h2 class="section-label">The Problem</h2>
       <p class="entry-desc">
-        Spenmo's Philippine expansion required compliant KYB/KYC onboarding, but the existing process was entirely
-        manual—sales collected documents via email, operations verified compliance, endless back-and-forth. Traditional
-        compliance forms overwhelm users with all requirements upfront, provide no progress visibility, and don't
-        account for users lacking documents on hand.
+        The existing forms were functional, but the experience of filling them out put most of the burden on the user.
+        Document guidance presented every acceptable option upfront, regardless of what a typical SME owner would
+        actually have. Fields that could have been prefilled weren't. And once a user submitted some documents and came
+        back later, there was no clear way to see their progress at a glance.
       </p>
-    </section>
-
-    <!-- THE SOLUTION -->
-    <section class="project-section">
-      <h2 class="section-label">The Solution</h2>
       <p class="entry-desc">
-        Progressive disclosure design with sticky navigation, dynamic document requirements, and auto-fill
-        functionality. The form supports flexible completion since users rarely have all documents immediately
-        available.
+        The PH expansion was the right moment to address these. Adapting the form for new compliance requirements meant
+        touching it anyway, so the question became: what can we improve while we're here?
       </p>
     </section>
 
-    <!-- SPLIT IMAGE -->
-    <div class="entry-images two-col" style="margin-bottom: 56px;">
-      <div class="img-placeholder"><span>Form Overview</span></div>
-      <div class="img-placeholder"><span>Sticky Navigation Detail</span></div>
-    </div>
-
-    <!-- KEY DESIGN FEATURES -->
+    <!-- DESIGN PRINCIPLES -->
     <section class="project-section">
-      <h2 class="section-label">Key Design Features</h2>
+      <h2 class="section-label">Design Principles</h2>
 
       <div class="project-feature">
-        <p class="feature-title">1. Dynamic Document Requirements</p>
+        <p class="feature-title">1. Reduce cognitive load through progressive disclosure</p>
         <p class="entry-desc">
-          Form shows only relevant fields based on business type—sole proprietorships see different requirements than
-          corporations. Reduces cognitive load by hiding irrelevant sections.
+          One of the most friction-heavy moments in the original form was the document selection step. When a user
+          needed to provide proof of identity, the form presented the full list of acceptable documents, often 10 or
+          more options in one block of text. Instead of helping users decide, it overwhelmed them.
+        </p>
+        <p class="entry-desc">
+          I restructured this by surfacing only the documents most SME owners are likely to already have — a short,
+          prioritised list. For users who don't have those specific documents, a "See more" link reveals the full set of
+          alternatives. This kept the default experience clean while preserving flexibility for edge cases.
         </p>
       </div>
 
-      <div class="project-feature">
-        <p class="feature-title">2. Sticky Side Navigation</p>
-        <p class="entry-desc">
-          Users can submit up to 12 documents. Returning users immediately see:
-        </p>
-        <ul class="feature-list">
-          <li>Which documents are complete (✓)</li>
-          <li>Which are incomplete (○)</li>
-          <li>Which need attention (⚠)</li>
-        </ul>
-        <p class="entry-desc" style="margin-top: 12px;">
-          Direct navigation—click to jump to specific upload field. No scrolling to find their place.
-        </p>
-      </div>
-
-      <div class="entry-images" style="margin-bottom: 40px;">
-        <div class="img-placeholder full"><span>Sticky Navigation — Status Indicators</span></div>
+      <!-- BEFORE / AFTER -->
+      <div class="entry-images two-col" style="margin-bottom: 40px;">
+        <div>
+          <p class="scenario-sub-title" style="margin-bottom: 10px;">Before</p>
+          <div class="img-wrap-orange">
+            <img src="portfolio images/Spenmo KYB project/Spenmo_KYB_OldList.png" alt="Before: full document list dumped to users" />
+          </div>
+        </div>
+        <div>
+          <p class="scenario-sub-title" style="margin-bottom: 10px;">After</p>
+          <div class="img-wrap-orange">
+            <img src="portfolio images/Spenmo KYB project/Spenmo_KYB_NewList.png" alt="After: shortened list with See More option" />
+          </div>
+        </div>
       </div>
 
       <div class="project-feature">
-        <p class="feature-title">3. Auto-Fill Functionality</p>
+        <p class="feature-title">2. Make progress impossible to miss</p>
         <p class="entry-desc">
-          Pre-populates applicant details and company information already collected during sales outreach. Reduces form
-          fields and signals we respect their time.
+          A sticky side navigation anchors to the screen as users scroll through the 12-document flow. Each item shows
+          one of three states: complete (✓), incomplete (○), or needs attention (⚠). Returning users can see exactly
+          where they left off and jump directly to it, with no scrolling required to find their place.
         </p>
       </div>
 
-      <div class="entry-images">
-        <div class="img-placeholder full"><span>Auto-Filled Fields with Edit Capability</span></div>
+      <div class="img-wrap-orange" style="margin-bottom: 40px;">
+        <div class="img-placeholder full"><span>Sticky Navigation — Live Status Indicators</span></div>
       </div>
+
+      <div class="project-feature">
+        <p class="feature-title">3. Prefilling as a feature, not an afterthought</p>
+        <p class="entry-desc">
+          The previous form had no prefilling at all. Users were expected to re-enter details that Spenmo already had
+          from the sales process: their name, company registration, contact information. I introduced prefilling as a
+          deliberate feature, pulling in that data automatically so users arrive at a form that's already partially
+          complete.
+        </p>
+        <p class="entry-desc">
+          To make sure users didn't feel like information had been changed without their knowledge, I added an explicit
+          notification on entry: a clear message explaining that some fields had been pre-filled based on previously
+          submitted information, and prompting them to review and confirm. This gave users a sense of support rather
+          than surprise.
+        </p>
+      </div>
+
+      <div class="img-wrap-orange" style="margin-bottom: 40px;">
+        <img src="portfolio images/Spenmo KYB project/Spenmo_KYB_Prefill.png" alt="Prefill notification shown to users on form entry" />
+      </div>
+
     </section>
 
-    <!-- DOCUMENT UPLOAD SCENARIO -->
+    <!-- CROSS-FUNCTIONAL WORK -->
     <section class="project-section">
-      <h2 class="section-label">The Document Upload Scenario</h2>
+      <h2 class="section-label">Cross-Functional Work</h2>
+      <p class="entry-desc">
+        I worked closely with the compliance team to shape the content side of the form. They helped define what
+        guidance we could legitimately provide inside the tooltips and document help sections, so users got clear,
+        accurate explanations of what each document was for and what alternatives were acceptable.
+      </p>
+      <p class="entry-desc">
+        With engineering, I ran feasibility checks on the two most technically involved parts of the design: the
+        prefilling system and the sticky side navigation component. I also worked through how different business types
+        would affect which form fields appeared, to make sure the conditional logic was implementable without creating
+        edge cases down the line.
+      </p>
+    </section>
+
+    <!-- REFLECTIONS -->
+    <section class="project-section">
+      <h2 class="section-label">Reflections</h2>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">The Challenge</p>
+        <p class="scenario-sub-title">Regulatory constraints push better structure</p>
         <p class="entry-desc">
-          Without clear status visibility, returning customers lack immediate clarity on what's submitted. They'd scroll
-          through 12 upload fields trying to remember what they already completed.
+          The constraint of needing to collect 12 document types forced me to ask the right question: how do we make
+          this manageable? The answer wasn't prettier buttons. It was structural. Progressive disclosure, persistent
+          navigation, and status tracking turned a compliance checklist into a guided experience.
         </p>
       </div>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">The Solution</p>
+        <p class="scenario-sub-title">Transparency is part of the design</p>
         <p class="entry-desc">
-          Sticky navigation stays anchored to top and side. Users visualize all submission statuses at a glance and
-          jump directly to incomplete uploads.
+          Adding the prefill notification was a small decision with an outsized effect on how the form felt. When users
+          know why something has happened, they trust the system more. That kind of micro-transparency is easy to skip
+          when you're moving fast, and worth protecting.
         </p>
       </div>
 
       <div class="scenario-sub">
-        <p class="scenario-sub-title">Impact</p>
-        <ul class="impact-list">
-          <li>Reduces cognitive effort (no mental tracking)</li>
-          <li>Reduces memory load (visual status replaces remembering)</li>
-          <li>Reduces interaction friction (direct navigation vs. scrolling)</li>
-          <li>Increases feeling of support (guided vs. lost)</li>
-        </ul>
+        <p class="scenario-sub-title">On shipping</p>
+        <p class="entry-desc">
+          This project was paused before launch when Spenmo halted its Philippine market expansion. Good design doesn't
+          always ship, but the thinking, the stakeholder alignment, and the process still had value to the team at the
+          time.
+        </p>
       </div>
 
-      <div class="entry-images">
-        <div class="img-placeholder full"><span>Full Page View — Visual Hierarchy & Compliance Text</span></div>
-      </div>
-    </section>
-
-    <!-- CROSS-FUNCTIONAL COLLABORATION -->
-    <section class="project-section">
-      <h2 class="section-label">Cross-Functional Collaboration</h2>
-      <p class="entry-desc">
-        Worked with compliance team to integrate mandatory legal language and requirements without destroying UX—used
-        clear hierarchy, contextual placement, and progressive disclosure to make dense compliance language digestible.
-      </p>
-    </section>
-
-    <!-- WHAT I LEARNED -->
-    <section class="project-section">
-      <h2 class="section-label">What I Learned</h2>
-      <p class="entry-desc">
-        The biggest challenge wasn't regulatory complexity—it was making mandatory compliance feel helpful rather than
-        burdensome. Reframing compliance as user support ("we're helping you understand what you need") led to
-        contextual help text explaining WHY documents were needed.
-      </p>
-      <p class="entry-desc">
-        Regulatory constraints can inspire creative solutions. The constraint of "must collect 12 documents" pushed me
-        to ask: How do we make this manageable? The answer was structural—progressive disclosure, persistent navigation,
-        status tracking—not prettier buttons.
-      </p>
     </section>
 
   </main>
